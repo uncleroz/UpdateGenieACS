@@ -19,4 +19,6 @@ chmod +x install.sh
 ```
 bash install.sh
 ```
-
+# Login
+user = admin
+pass = admin
