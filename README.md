@@ -1,3 +1,8 @@
+# Requirement
+Install :
+1. Node JS
+2. MongoDB
+
 # Usage
 ```
 apt install git curl -y
