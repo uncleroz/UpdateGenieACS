@@ -126,13 +126,15 @@ for ((i = 5; i >= 1; i--)); do
 done
 
 cd 
+sudo rm -r /usr/lib/node_modules/genieacs
+unzip multitab.zip -d /usr/lib/node_modules/
+cd
 sudo mongodump --db=genieacs --out genieacs-backup
-sudo mongorestore --db=genieacs --drop genieacs
+sudo mongorestore --db=genieacs --drop virtualparameter
 #Sukses
 echo -e "${GREEN}============================================================================${NC}"
 echo -e "${GREEN}=================== VIRTUAL PARAMETER BERHASIL DI INSTALL. =================${NC}"
 echo -e "${GREEN}===Jika ACS URL berbeda, silahkan edit di Admin >> Provosions >> inform ====${NC}"
 echo -e "${GREEN}========== GenieACS UI akses port 3000. : http://$local_ip:3000 ============${NC}"
 echo -e "${GREEN}============================================================================${NC}"
-cd
-sudo rm -r genieacs
+
