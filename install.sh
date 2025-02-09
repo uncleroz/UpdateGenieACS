@@ -111,7 +111,6 @@ fi
 echo -e "${GREEN}============================================================================${NC}"
 echo -e "${GREEN}========== GenieACS UI akses port 3000. : http://$local_ip:3000 ============${NC}"
 echo -e "${GREEN}============================================================================${NC}"
-cp -r logo-midi.svg /usr/lib/node_modules/genieacs/public/
 echo -e "${GREEN}Sekarang install parameter. Apakah anda ingin melanjutkan? (y/n)${NC}"
 read confirmation
 
@@ -125,15 +124,17 @@ for ((i = 5; i >= 1; i--)); do
     echo "Lanjut Install Parameter $i. Tekan ctrl+c untuk membatalkan"
 done
 
-cd 
+cd
+sudo apt install unzip 
 sudo rm -r /usr/lib/node_modules/genieacs
 unzip multitab.zip -d /usr/lib/node_modules/
+
 cd
 sudo mongodump --db=genieacs --out genieacs-backup
 sudo mongorestore --db=genieacs --drop virtualparameter
 #Sukses
 echo -e "${GREEN}============================================================================${NC}"
-echo -e "${GREEN}=================== VIRTUAL PARAMETER BERHASIL DI INSTALL. =================${NC}"
+echo -e "${GREEN}=================== VIRTUAL PARAMETER BERHASIL DI INSTALL ==================${NC}"
 echo -e "${GREEN}===Jika ACS URL berbeda, silahkan edit di Admin >> Provosions >> inform ====${NC}"
 echo -e "${GREEN}========== GenieACS UI akses port 3000. : http://$local_ip:3000 ============${NC}"
 echo -e "${GREEN}============================================================================${NC}"
