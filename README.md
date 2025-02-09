@@ -1,4 +1,4 @@
-cd genieacs
+cd UpdateGenieACS
 
 chmod +x install.sh
 
