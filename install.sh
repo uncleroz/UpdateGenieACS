@@ -124,8 +124,9 @@ for ((i = 5; i >= 1; i--)); do
     echo "Lanjut Install Parameter $i. Tekan ctrl+c untuk membatalkan"
 done
 
+sudo apt install unzip
+
 cd
-sudo apt install unzip 
 sudo rm -r /usr/lib/node_modules/genieacs
 unzip multitab.zip -d /usr/lib/node_modules/
 
