@@ -127,12 +127,10 @@ done
 sudo apt install unzip
 
 cd
-sudo rm -r /usr/lib/node_modules/genieacs
-sudo unzip multitab.zip -d /usr/lib/node_modules/
-
-cd
 sudo mongodump --db=genieacs --out genieacs-backup
 sudo mongorestore --db=genieacs --drop virtualparameter
+
+sudo unzip multitab.zip -d /usr/lib/node_modules/
 #Sukses
 echo -e "${GREEN}============================================================================${NC}"
 echo -e "${GREEN}=================== VIRTUAL PARAMETER BERHASIL DI INSTALL ==================${NC}"
