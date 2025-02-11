@@ -97,11 +97,11 @@ EOF
     dateext
 }
 EOF
-    echo -e "${GREEN}========== Install APP GenieACS selesai... ==============${NC}"
+    echo -e "${GREEN}==================== Install APP GenieACS selesai... =======================${NC}"
     systemctl daemon-reload
     systemctl enable --now genieacs-{cwmp,fs,ui,nbi}
     systemctl start genieacs-{cwmp,fs,ui,nbi}    
-    echo -e "${GREEN}================== Sukses genieACS CWMP, FS, NBI, UI ==================${NC}"
+    echo -e "${GREEN}===================== Sukses genieACS CWMP, FS, NBI, UI ====================${NC}"
 else
     echo -e "${GREEN}============================================================================${NC}"
     echo -e "${GREEN}=================== GenieACS sudah terinstall sebelumnya. ==================${NC}"
