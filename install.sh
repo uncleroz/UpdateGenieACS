@@ -128,7 +128,7 @@ sudo apt install unzip
 
 cd
 sudo rm -r /usr/lib/node_modules/genieacs
-unzip multitab.zip -d /usr/lib/node_modules/
+sudo unzip multitab.zip -d /usr/lib/node_modules/
 
 cd
 sudo mongodump --db=genieacs --out genieacs-backup
