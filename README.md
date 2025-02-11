@@ -1,12 +1,17 @@
+# Requirement
+Install :
+1. Node JS
+2. MongoDB
+
 # Usage
 ```
 apt install git curl -y
 ```
 ```
-git clone https://github.com/uncleroz/UpdateGenieACS
+git clone https://github.com/uncleroz/GenieACSmod
 ```
 ```
-cd UpdateGenieACS
+cd GenieACSmod
 ```
 ```
 chmod +x install.sh
@@ -14,4 +19,7 @@ chmod +x install.sh
 ```
 bash install.sh
 ```
+# Login
+user = admin
 
+pass = admin
