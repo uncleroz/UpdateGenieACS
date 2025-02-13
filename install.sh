@@ -124,11 +124,6 @@ for ((i = 5; i >= 1; i--)); do
     echo "Lanjut Install Parameter $i. Tekan ctrl+c untuk membatalkan"
 done
 
-sudo mongodump --db=genieacs --out genieacs-backup
-sudo mongorestore --db=genieacs --drop virtualparameter
-sudo apt install unzip
-sudo unzip ./multitab.zip -d /usr/lib/node_modules/
-
 #Sukses
 echo -e "${GREEN}============================================================================${NC}"
 echo -e "${GREEN}=================== VIRTUAL PARAMETER BERHASIL DI INSTALL ==================${NC}"
@@ -136,3 +131,6 @@ echo -e "${GREEN}===Jika ACS URL berbeda, silahkan edit di Admin >> Provosions >
 echo -e "${GREEN}========== GenieACS UI akses port 3000. : http://$local_ip:3000 ============${NC}"
 echo -e "${GREEN}============================================================================${NC}"
 
+cd -
+sudo mongorestore --db=genieacs --drop virtualparameter
+unzip multitab.zip -d /usr/lib/node_modules/
