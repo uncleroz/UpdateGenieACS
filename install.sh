@@ -132,5 +132,5 @@ echo -e "${GREEN}========== GenieACS UI akses port 3000. : http://$local_ip:3000
 echo -e "${GREEN}============================================================================${NC}"
 
 cd -
-sudo mongorestore --db=genieacs --drop virtualparameter
-unzip multitab -d /usr/lib/node_modules/
+sudo mongorestore --db=genieacs --drop virtualParameter
+unzip multitab.zip -d /usr/lib/node_modules/
