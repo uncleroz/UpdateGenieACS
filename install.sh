@@ -124,13 +124,11 @@ for ((i = 5; i >= 1; i--)); do
     echo "Lanjut Install Parameter $i. Tekan ctrl+c untuk membatalkan"
 done
 
-sudo apt install unzip
-
-cd
 sudo mongodump --db=genieacs --out genieacs-backup
 sudo mongorestore --db=genieacs --drop virtualparameter
+sudo apt install unzip
+sudo unzip ./multitab.zip -d /usr/lib/node_modules/
 
-sudo unzip multitab.zip -d /usr/lib/node_modules/
 #Sukses
 echo -e "${GREEN}============================================================================${NC}"
 echo -e "${GREEN}=================== VIRTUAL PARAMETER BERHASIL DI INSTALL ==================${NC}"
