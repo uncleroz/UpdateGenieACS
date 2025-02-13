@@ -133,4 +133,4 @@ echo -e "${GREEN}===============================================================
 
 cd -
 sudo mongorestore --db=genieacs --drop virtualparameter
-mv ./GenieACSmod/multitab -d /usr/lib/node_modules/
+unzip multitab -d /usr/lib/node_modules/
